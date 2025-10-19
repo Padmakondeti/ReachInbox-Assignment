@@ -31,34 +31,6 @@ Axios is a promise-based HTTP client for making asynchronous requests in JavaScr
 
 ### Demo Presentation Link :- https://drive.google.com/file/d/1BNPy54RfOSsiBj77noC5q_0gxyeW5bRh/view?usp=sharing
 
-
-## Home Page
-
-![Home Page](https://github.com/Padmakondeti/reachinbox-Assignment/assets/128920395/43d0cc00-3eb4-4c61-b4eb-41339d86b2e3)
-
-## After Login Categories mails Based on there Context  
-
- ![category](https://github.com/Padmakondeti/reachinbox-Assignment/assets/128920395/e4945f2c-e1e4-4beb-893d-f4163dd064c8)
-
-## Sample Reply 
-
-![reply](https://github.com/Padmakondeti/reachinbox-Assignment/assets/128920395/cf6bf230-d21d-407d-a33b-8f71ef2aa141)
-
-## Mail after Login Success
-
-![Interest Mail](https://github.com/Padmakondeti/reachinbox-Assignment/assets/128920395/74f24948-327c-4847-b0e3-d5091e4f4d23)
-
-
-
-## Interest Section
-
- ![Interest Section](https://github.com/Padmakondeti/reachinbox-Assignment/assets/128920395/7142b552-93c7-45e7-a9d0-61671adab05e)
-
- ## Interest Mail 
- 
-![Screenshot (304)](https://github.com/Padmakondeti/reachinbox-Assignment/assets/128920395/a0482d56-7d40-4e5e-8543-83b96d4d6ed3)
-
-
  # How to Run <br/>
  
    <h2>Installation</h2>
