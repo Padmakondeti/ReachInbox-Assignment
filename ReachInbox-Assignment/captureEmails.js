@@ -52,19 +52,19 @@ const captureEmails = async (gmail, messages, index) => {
     )
     if (response === 'Interested') {
       // await addLabel(gmail, messageId, "interested");
-      await addLabel(gmail, messageId, 'Label_5516825564213520612')
+      await addLabel(gmail, messageId, 'INTERESTED')
     } else if (response === 'Meeting Booked') {
       // await addLabel(gmail, messageId, "Meeting Booked");
-      await addLabel(gmail, messageId, 'Label_3218851228108376452')
+      await addLabel(gmail, messageId, 'MEETING_BOOKED')
     } else if (response === 'Not Interested') {
       // await addLabel(gmail ,messageId, "Not Interested");
-      await addLabel(gmail, messageId, 'Label_4133738106663783671')
+      await addLabel(gmail, messageId, 'NOT_INTERESTED')
     } else if (response === 'Spam') {
       // await addLabel(gmail ,messageId, "Spam");
-      await addLabel(gmail, messageId, 'Label_6333738106783783985')
+      await addLabel(gmail, messageId, 'SPAM')
     } else {
       // await addLabel(gmail ,messageId, "Out of Office");
-      await addLabel(gmail, messageId, 'Label_7834738216653793451')
+      await addLabel(gmail, messageId, 'OUT_OF_OFFICE')
     }
   } catch (err) {
     console.log(err)
