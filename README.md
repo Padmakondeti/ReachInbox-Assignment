@@ -54,5 +54,5 @@ Axios is a promise-based HTTP client for making asynchronous requests in JavaScr
    # Credits <br/>
    This project was developed by ```Padmavathi Kondeti``` as a part of ```ReachInbox Assignment``` program.
 
-   <p>Feel free to integrate and explore these endpoints into your application.</p>
+   <p>For any updations, please feel free to get back to me.</p>
   
