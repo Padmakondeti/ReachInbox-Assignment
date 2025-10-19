@@ -1,58 +1,109 @@
-# ReachInbox Assignment
+# ReachInbox-Assignment
 
-## Server
+Build a Feature-Rich Onebox for Emails.
 
-The assignment is to build a tool that will check and parse the emails in  multiple IMAP email accounts (like a Google and Outlook email ID) to access and manage several different email accounts from a single email client or application across various devices, and
-respond to the e-mails based on the context using AI. Use BullMQ as the tasks scheduler
-This is a server-based application built with Node.js and Express. It uses various packages such as  `openai` for AI functionalities, `googleapis` for Google APIs, and `axios` for HTTP requests and `bullMQ` to process queues.
+# technologies used:
+- Node.js
+- Express.js
+- OpenAI
+- Google APIs
+- Microsoft Graph API
+
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Technologies](#technologies)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Overview
+ReachInbox-Assignment is a project designed to showcase a feature-rich onebox for emails. It serves as an example of how to handle email data effectively with JavaScript.
 
-This Node.js application serves as an automated email outreach tool. It sends emails, categorizes them, generates automated replies based on the content, and sends them using the Gmail API.
+## Features
+- Email parsing and rendering
+- JavaScript-driven functionality
+- Modular and scalable design
 
-## Technologies Used
+## Installation setup
+1. Clone the repository to your local machine
+```bash
+git clone https://github.com/Padmakondeti/ReachInbox-Assignment.git
+```
+2. Navigate to the root directory of the project directory :
+```bash 
+cd server
+```
+3. Run `npm install` to install all the dependencies
+4. Create a `.env` file in the root directory with the same IDs as specified in the documentation.
 
-### 1. Node
+## Running the server
+1. To start the server, run the following command in your terminal
+```bash
+npm start
+```
+*This will start the server at localhost:9200 (or whatever port you have specified).*
+or we can use backend deployed link also.
 
-Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. It allows for the execution of JavaScript code server-side.
+2. To start the worker.js file, run the following command in your terminal
+```bash
+npm run server
+```
 
-### 2. Express
+## API Endpoints
 
-Express is a web application framework for Node.js. It simplifies the process of building web applications and APIs by providing a robust set of features.
+### For Google's OAuth2.0:
+- `https://reachinbox-assignment.onrender.com/auth/google` - GET for google authentication
+- `https://reachinbox-assignment.onrender.com/api/mail/userInfo/:email` - GET request to view user profile
+- `https://reachinbox-assignment.onrender.com/api/mail/allDrafts/:email` - GET request to view all drafts mail.
+- `https://reachinbox-assignment.onrender.com/api/mail/read/:email/message/:message` - GET request to read a specific email(using id).
+- `https://reachinbox-assignment.onrender.com/api/mail/list/:email` - GET request to get a list of mails.
+- `https://reachinbox-assignment.onrender.com/api/mail/sendMail` - POST request send mail with label.
+```
+{
+    "from":"sendersmail@gmail.com",
+    "to":"recieversmail@gmail.com",
+    "label":"interested/not-interested/meeting-booked/spam/outofoffice"
+}
+```
+- `https://reachinbox-assignment.onrender.com/api/mail/sendone/:id` - POST request to send a single mail for particular ID.
+```
+{
+    "from":"sendersmail@gmail.com",
+    "to":"recieversmail@gmail.com"
+}
+```
+- - `https://reachinbox-assignment.onrender.com/api/mail/sendMultiple/:id` - POST request to send a single mail for particular ID.
+ ```
+{
+    "from":"sendersmail@gmail.com",
+    "to":["demo@gmail.com","demo@gmail.com", "demo@gmail.com"]
+}
+```
 
-### 3. React
+### For microsoft OAuth2.0:
 
-React is a JavaScript library for building Ssamless UI. Its component-based architecture makes it easy to manage and organize UI elements, promoting reusability and maintainability.React Provide SOC ( Seperation of Concerns ) so we can separate our app.
+- `https://reachinbox-assignment.onrender.com/outlook/signin` - GET for micosoft authentication for outlook
+- `https://reachinbox-assignment.onrender.com/outlook/callbak` - GET for micosoft getting access token
+- `https://reachinbox-assignment.onrender.com/outlook/profile` - GET request to get profile data for particular user
+- `https://reachinbox-assignment.onrender.com/outlook/all-Mails/{email}` - GET request for get ist of all mails of outllok user
+- `https://reachinbox-assignment.onrender.com/outlook/{email}/read-Msg/{:message}` = GET request to read partivcular mail using messange id
+- `https://reachinbox-assignment.onrender.com/outlook/{email}/send-Mail` - post request for sending mail to another user using outlook
+```
+{
+    "from":"sendersmail@gmail.com",
+    "to":"recieversmail@gmail.com"
+     "label":"interested/not-interested/meeting-booked/spam/outofoffice"
+}
+```
+- `https://reachinbox-assignment.onrender.com/outlook/sendone/:email/:id` - post request for sending mail to another user using outlook using `bullmq`
+```
+{
+    "from":"sendersmail@gmail.com",
+    "to":"recieversmail@gmail.com"
+}
+## Contributing
+Contributions are welcome! Feel free to fork the repository and submit your pull requests.
 
-### 4. Axios
-
-Axios is a promise-based HTTP client for making asynchronous requests in JavaScript. It simplifies data fetching and handling HTTP responses, making it a reliable choice for API interactions in React applications.
-
-
-# How to Run <br/>
- 
-   <h2>Installation</h2>
-
-   ### Run Frontend 
-   
-   Clone the repository:   ``` git clone https://github.com/Padmakondeti/ReachInbox-Assignment.git ``` <br/>
-   Navigate to the project directory:   ``` cd reachinbox-onebox ``` <br/>
-   Navigate to the project directory:   ``` cd frontend ``` <br/>
-   Install the dependencies:   ``` npm install node-imap ``` <br/>
-   Start the development server:   ``` npm run start ``` <br/>
-   Open your browser and visit:   ``` http://localhost:9200 ``` <br/>
-
-   ### Run Backend 
-   
-   Clone the repository:   ``` git clone https://github.com/Padmakondeti/ReachInbox-Assignment.git ``` <br/>
-   Navigate to the project directory:   ``` cd reachinbox-onebox ``` <br/>
-   Install the dependencies:   ``` npm install node-imap ``` <br/>
-   Start the development server:   ``` npm run server ``` <br/>
-   Open your browser and visit:   ``` http://localhost:9200 ``` <br/>
-
- 
-   # Credits <br/>
-   This project was developed by ```Padmavathi Kondeti``` as a part of ```ReachInbox Assignment``` program.
-
-   <p>For any updations, please feel free to get back to me.</p>
-  
+## License
+This project currently does not have a license.
