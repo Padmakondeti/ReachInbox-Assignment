@@ -65,7 +65,7 @@ Axios is a promise-based HTTP client for making asynchronous requests in JavaScr
 
    ### Run Frontend 
    
-   Clone the repository:   ``` git clone https://github.com/Padmakondeti/ReachInbox.git ``` <br/>
+   Clone the repository:   ``` git clone https://github.com/Padmakondeti/ReachInbox-Assignment.git ``` <br/>
    Navigate to the project directory:   ``` cd reachinbox-onebox ``` <br/>
    Navigate to the project directory:   ``` cd frontend ``` <br/>
    Install the dependencies:   ``` npm install node-imap ``` <br/>
@@ -74,7 +74,7 @@ Axios is a promise-based HTTP client for making asynchronous requests in JavaScr
 
    ### Run Backend 
    
-   Clone the repository:   ``` git clone https://github.com/Padmakondeti/ReachInbox.git ``` <br/>
+   Clone the repository:   ``` git clone https://github.com/Padmakondeti/ReachInbox-Assignment.git ``` <br/>
    Navigate to the project directory:   ``` cd reachinbox-onebox ``` <br/>
    Install the dependencies:   ``` npm install node-imap ``` <br/>
    Start the development server:   ``` npm run server ``` <br/>
