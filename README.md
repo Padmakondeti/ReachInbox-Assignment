@@ -63,7 +63,7 @@ npm run server
 {
     "from":"sendersmail@gmail.com",
     "to":"recieversmail@gmail.com",
-    "label":"interested/not-interested/meeting-booked/spam/outofoffice"
+    "label":"interested/not-interested/meeting-booked/spam/out-of-office"
 }
 ```
 - `https://reachinbox-assignment.onrender.com/api/mail/sendone/:id` - POST request to send a single mail for particular ID.
@@ -93,7 +93,7 @@ npm run server
 {
     "from":"sendersmail@gmail.com",
     "to":"recieversmail@gmail.com"
-     "label":"interested/not-interested/meeting-booked/spam/outofoffice"
+     "label":"interested/not-interested/meeting-booked/spam/out-of-office"
 }
 ```
 - `https://reachinbox-assignment.onrender.com/outlook/sendone/:email/:id` - post request for sending mail to another user using outlook using `bullmq`
