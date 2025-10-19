@@ -2,7 +2,7 @@
 
 Build a Feature-Rich Onebox for Emails.
 
-# technologies used:
+# Technologies used:
 - Node.js
 - Express.js
 - OpenAI
