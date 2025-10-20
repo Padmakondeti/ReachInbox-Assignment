@@ -57,6 +57,16 @@ React is a JavaScript library for building Ssamless UI. Its component-based arch
 
 Axios is a promise-based HTTP client for making asynchronous requests in JavaScript. It simplifies data fetching and handling HTTP responses, making it a reliable choice for API interactions in React applications.
 
+## Home Page
+
+![Home Page](https://ik.imagekit.io/kpwsmgijj/Screenshot_20251020_122040_Chrome.jpg?updatedAt=1760955655746)
+
+## After Login Categories mails Based on Label
+
+![category](https://ik.imagekit.io/kpwsmgijj/Screenshot%202025-10-20%20153445.png?updatedAt=1760955640504)
+
+![category name](https://ik.imagekit.io/kpwsmgijj/Screenshot%202025-10-20%20153227.png?updatedAt=1760955599821)
+![category name](https://ik.imagekit.io/kpwsmgijj/Screenshot_20251020_154242_Gmail.jpg?updatedAt=1760955674668)
 
 ## API Endpoints
 
