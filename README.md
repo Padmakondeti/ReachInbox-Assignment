@@ -18,7 +18,7 @@ ReachInbox-Assignment is a project designed to showcase a feature-rich onebox fo
 - JavaScript-driven functionality
 - Modular and scalable design
 
-# Getting Started <br/>
+## Getting Started <br/>
  
    <h2>Installation</h2>
 
@@ -66,7 +66,6 @@ Axios is a promise-based HTTP client for making asynchronous requests in JavaScr
 ![category](https://ik.imagekit.io/kpwsmgijj/Screenshot%202025-10-20%20153445.png?updatedAt=1760955640504)
 
 ![category name](https://ik.imagekit.io/kpwsmgijj/Screenshot%202025-10-20%20153227.png?updatedAt=1760955599821)
-![category name](https://ik.imagekit.io/kpwsmgijj/Screenshot_20251020_154242_Gmail.jpg?updatedAt=1760955674668)
 
 ## API Endpoints
 
@@ -120,6 +119,7 @@ Axios is a promise-based HTTP client for making asynchronous requests in JavaScr
     "from":"sendersmail@gmail.com",
     "to":"recieversmail@gmail.com"
 }
+```
 
 ## Contributing
 Contributions are welcome! Feel free to fork the repository and submit your pull requests.
