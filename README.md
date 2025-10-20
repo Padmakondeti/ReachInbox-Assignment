@@ -1,6 +1,8 @@
 # ReachInbox-Assignment
 
-Build a Feature-Rich Onebox for Emails.
+The assignment is to build a tool that will check and parse the emails in  multiple IMAP email accounts (like a Google and Outlook email ID) to access and manage several different email accounts from a single email client or application across various devices, and
+respond to the e-mails based on the context using AI. Use BullMQ as the tasks scheduler
+This is a server-based application built with Node.js and Express. It uses various packages such as  `openai` for AI functionalities, `googleapis` for Google APIs, and `axios` for HTTP requests and `bullMQ` to process queues.
 
 ## Table of Contents
 - [Overview](#overview)
