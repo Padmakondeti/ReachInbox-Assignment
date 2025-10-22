@@ -107,8 +107,8 @@ Axios is a promise-based HTTP client for making asynchronous requests in JavaScr
 - `https://reachinbox-assignment.onrender.com/outlook/signin` - GET for micosoft authentication for outlook
 - `https://reachinbox-assignment.onrender.com/outlook/callbak` - GET for micosoft getting access token
 - `https://reachinbox-assignment.onrender.com/outlook/profile` - GET request to get profile data for particular user
-- `https://reachinbox-assignment.onrender.com/outlook/all-Mails/{email}` - GET request for get ist of all mails of outllok user
-- `https://reachinbox-assignment.onrender.com/outlook/{email}/read-Msg/{:message}` = GET request to read partivcular mail using messange id
+- `https://reachinbox-assignment.onrender.com/outlook/all-Mails/{email}` - GET request for get list of all mails of outlook user
+- `https://reachinbox-assignment.onrender.com/outlook/{email}/read-Msg/{:message}` = GET request to read particular mail using message id
 - `https://reachinbox-assignment.onrender.com/outlook/{email}/send-Mail` - post request for sending mail to another user using outlook
 ```
 {
